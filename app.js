@@ -9,7 +9,11 @@ app.use(bodyParser.urlencoded({useNewUrlParser: true}));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
-  res.send("hello");
+  res.render("landing");
+});
+
+app.get("/league", function(req, res){
+  res.render("league");
 });
 
 app.listen(port);
