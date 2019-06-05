@@ -1,40 +1,46 @@
-<h1>Leagues</h1>
+<% include partials/header %>
 
-<table>
-  <tr>
-    <th>
-      Leagues
-    </th>
-  </tr>
+<div class="ui main grid">
 
-    <tr>
-      <td>
-        League 1 <----
-      </td>
-    </tr>
-    <tr>
-      <td>
-        League 2
-      </td>
-    </tr>
-    <tr>
-      <td>
-        League 3
-      </td>
-    </tr>
-</table>
+  <div class="four wide column ui vertical menu">
+    <div class="item">
+      <div class="header">
+        Your Leagues
+      </div>
+    </div>
+    <a class= "item" href="#">League 1</a>
+    <a class= "item" href="#">League 2</a>
+    <a class= "item" href="#">League 3</a>
+    <a class= "item" href="#">League 4</a>
 
-<table>
-  <tr>
-    <th>Team Name</th>
-    <th>Record</th>
-  </tr>
-  <tr>
-    <td>Team 1</td>
-    <td>5-3-1</td>
-  </tr>
-  <tr>
-    <td>Team 2</td>
-    <td>3-5-1</td>
-  </tr>
-</table>
+  </div>
+
+  <div class="ten wide column">
+    <div class="ui basic segment">
+      <div class="item">
+        <div class="header">
+          League Name
+        </div>
+      </div>
+      <table class="ui very basic collapsing celled table">
+        <tr>
+          <th>Team Name</th>
+          <th>Record</th>
+        </tr>
+        <tr>
+          <td>Team 1</td>
+          <td>5-3-1</td>
+        </tr>
+        <tr>
+          <td>Team 2</td>
+          <td>3-5-1</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+
+<% include partials/footer %>
